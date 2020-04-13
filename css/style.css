@@ -36,6 +36,11 @@ body {
   margin: 0 auto;
 }
 
+.open__nav {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .nav__content {
   width: 80%;
   display: flex;
@@ -144,6 +149,10 @@ body {
   .header__img--container {
     width: 40%;
   }
+
+  .header__buttons {
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -161,6 +170,62 @@ body {
 
   .p-small {
     padding: 0.6rem 1.1rem !important;
+  }
+
+  .open__nav {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 999;
+    background-color: #282d39;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    height: 100vh;
+    background-color: #370158;
+    z-index: 9;
+    position: relative;
+    width: 100%;
+    left: -100%;
+    transition: all 0.3s ease-in;
+  }
+
+  .nav__content {
+    flex-direction: column;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+    padding: 0;
+  }
+
+  .header__buttons {
+    flex-direction: column;
+  }
+
+  .m-bottom {
+    margin-bottom: 1.4rem;
+  }
+  .nav__item:not(:last-of-type) {
+    margin: 0 0 1rem 0;
+  }
+
+  .nav__link {
+    color: #fff;
+  }
+
+  .btn-login {
+    color: rgb(151, 0, 0);
+  }
+
+  .logo {
+    color: aliceblue;
   }
 }
 
