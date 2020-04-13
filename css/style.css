@@ -1,0 +1,75 @@
+/* Fonts Used */
+
+/* font-family: "PT Serif", serif; */
+/* font-family: "Dancing Script", cursive; */
+/* ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  font-weight: 300;
+}
+
+/* Header Style starts here */
+.header {
+  height: 100vh;
+}
+
+.header__nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav__content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__item:not(:last-of-type) {
+  margin-right: 1.2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.header__buttons {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.4rem 1.3rem;
+}
+
+.btn-signup {
+  background-image: linear-gradient(to right, #282d39, #7008b1);
+  color: #fff;
+}
+
+.btn-login {
+  border: 1px solid #7008b1;
+  color: #282d39;
+}
