@@ -256,6 +256,19 @@ body {
     width: 25%;
     /* justify-content: space-between; */
   }
+
+  /* Making the courses section responsive */
+
+  .courses__content {
+    flex-wrap: wrap;
+  }
+  .course {
+    width: 45%;
+  }
+
+  .course:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -331,6 +344,14 @@ body {
   .logo {
     color: aliceblue;
   }
+
+  .course {
+    width: 70%;
+  }
+
+  .course:not(:last-of-type) {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -365,5 +386,26 @@ body {
 
   .p-small {
     padding: 0.6rem 1.1rem !important;
+  }
+
+  .course {
+    width: 90%;
+  }
+
+  .price__number {
+    font-size: 1.2rem;
+  }
+
+  .course__title {
+    font-size: 1.2rem;
+  }
+
+  .course__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .course:not(:last-of-type) {
+    margin-bottom: 2.5rem;
   }
 }
