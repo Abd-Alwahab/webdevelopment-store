@@ -47,6 +47,19 @@
     font-size: 20px;
     /* width: 40%; */
   }
+
+  /* Users Section */
+  .users__content {
+    flex-wrap: wrap;
+  }
+
+  .user {
+    width: 45%;
+  }
+
+  .user:not(:last-of-type) {
+    margin-bottom: 8rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -147,6 +160,28 @@
   .about__content:not(:last-of-type) {
     margin-bottom: 8rem;
   }
+
+  .user__img--container {
+    width: 5rem;
+    height: 5rem;
+    margin-top: -2.5rem;
+  }
+
+  .user {
+    width: 45%;
+  }
+
+  .user:not(:last-of-type) {
+    margin-bottom: 5rem;
+  }
+
+  .user__name {
+    font-size: 1.2rem;
+  }
+
+  .user__job {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -225,6 +260,22 @@
   }
 
   .about__desc {
+    font-size: 1rem;
+  }
+
+  .user {
+    width: 70%;
+  }
+
+  .user:not(:last-of-type) {
+    margin-bottom: 5rem;
+  }
+
+  .user__name {
+    font-size: 1.5rem;
+  }
+
+  .user__job {
     font-size: 1rem;
   }
 }
