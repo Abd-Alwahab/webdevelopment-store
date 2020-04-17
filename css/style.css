@@ -330,3 +330,20 @@ body {
   width: 3.5rem;
   height: 3.5rem;
 }
+
+/* Footer */
+
+.footer {
+  padding: 4rem 0;
+  background-color: #2f0303;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  color: #fff;
+}
